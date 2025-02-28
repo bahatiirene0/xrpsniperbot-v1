@@ -1,0 +1,14 @@
+{
+    "builds": [
+      { "src": "package.json", "use": "@vercel/vite" }
+    ],
+    "outputDirectory": "dist",
+    "routes": [
+      { "src": "/(.*)", "dest": "/index.html" }
+    ],
+    "env": {
+      "VITE_API_ENDPOINT": "https://your-api-lambda-endpoint.execute-api.us-east-1.amazonaws.com/prod",
+      "VITE_WS_ENDPOINT": "wss://your-api-lambda-endpoint.execute-api.us-east-1.amazonaws.com/prod",
+      "NODE_ENV": "production"
+    }
+  }

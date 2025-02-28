@@ -1,0 +1,2 @@
+server/
+# Exclude backend for Vercel (handled by AWS Lambda)
